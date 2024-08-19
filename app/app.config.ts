@@ -27,7 +27,7 @@ export default defineAppConfig({
     {
       title: 'GitHub',
       icon: 'i-simple-icons-github',
-      to: 'https://gh.soubiran.dev',
+      to: 'https://github.com/barbapapazes/gavarnie',
       target: '_blank',
     },
     {
