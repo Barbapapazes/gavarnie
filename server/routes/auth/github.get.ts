@@ -39,6 +39,7 @@ export default oauthGitHubEventHandler({
         email: user.email,
         avatar: user.avatar,
         verifiedAt: user.verifiedAt,
+        twitchId: user.twitchId,
         githubId: oauthUser.id,
       })
       return sendRedirect(event, '/profile')

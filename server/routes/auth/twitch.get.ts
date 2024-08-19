@@ -38,6 +38,7 @@ export default oauthTwitchEventHandler({
         email: user.email,
         avatar: user.avatar,
         verifiedAt: user.verifiedAt,
+        githubId: user.githubId,
         twitchId: oauthUser.id,
       },
       )
