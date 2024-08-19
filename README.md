@@ -1,6 +1,6 @@
 # Gavarnie
 
-Pre-configured and ready-to-use features to help you start your full-stack Nuxt project **faster**.
+Pre-configured and ready-to-use features to help you start your full-stack NuxtHub project **faster**.
 
 [⛰️ View Gavarnie in action](https://gavarnie.barbapapazes.com)
 
