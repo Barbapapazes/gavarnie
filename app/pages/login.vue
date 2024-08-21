@@ -19,7 +19,7 @@ useSeoMeta({
       :title
       :description
     >
-      Already have an account? <NuxtLink
+      Don't have an account yet? <NuxtLink
         to="/register"
         class="text-primary font-medium"
       >
