@@ -42,7 +42,13 @@ pnpm run dev
 
 ## Production
 
-This application is intended for deployment on [Cloudflare](https://cloudflare.com). You can effortlessly utilize [NuxtHub Admin](https://hub.nuxt.com/docs/getting-started/deploy#nuxthub-admin) for a smooth deployment process.
+This application is intended for deployment on [Cloudflare](https://cloudflare.com). You can effortlessly utilize [NuxtHub Admin](https://hub.nuxt.com/docs/getting-started/deploy#nuxthub-admin) for a smooth deployment process or use the CLI:
+
+```bash
+npx nuxthub deploy
+```
+
+You will also need a [Nuxt UI Pro License](https://ui.nuxt.com/pro) to build the application for production.
 
 ## License
 
