@@ -10,9 +10,9 @@ Preconfigured and ready-to-use features designed to help you kickstart your full
 
 [⛰️ Gavarnie in action](https://gavarnie.barbapapazes.com)
 
-Crafted with [Nuxt UI Pro](https://ui.nuxt.com), [NuxtHub](https://hub.nuxt.com), [Nuxt Auth Utils](https://github.com/atinux/nuxt-auth-utils), and [Nuxt Security](https://nuxt.com/modules/security).
+Crafted with [Nuxt UI Pro](https://ui.nuxt.com/pro), [NuxtHub](https://hub.nuxt.com), [Nuxt Auth Utils](https://github.com/atinux/nuxt-auth-utils), and [Nuxt Security](https://nuxt.com/modules/security).
 
-[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?repo=barbapapazes/gavarnie)
+[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?template=gavarnie)
 
 ## Features
 
