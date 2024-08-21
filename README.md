@@ -1,10 +1,18 @@
 # Gavarnie
 
+_[Read the announcement](https://soubiran.dev/posts/introducing-gavarnie-launch-your-saas-with-nuxt-and-assurance)_
+
 Pre-configured and ready-to-use features to help you start your full-stack NuxtHub project **faster**.
+
+> [!NOTE]
+> One of my objectives with Gavarnie is not to create just another starter but to further the initiative to advance Nuxt and NuxtHub.
+> Thus, Gavarnie serves as a starting point, not an end, and it's up to us to nurture its growth. Please, join me in enhancing it.
 
 [⛰️ View Gavarnie in action](https://gavarnie.barbapapazes.com)
 
-Made with [Nuxt UI Pro](https://ui.nuxt.com), [NuxtHub](https://hub.nuxt.com), and [Nuxt Auth Utils](https://github.com/atinux/nuxt-auth-utils).
+Made with [Nuxt UI Pro](https://ui.nuxt.com), [NuxtHub](https://hub.nuxt.com), [Nuxt Auth Utils](https://github.com/atinux/nuxt-auth-utils), and [Nuxt Security](https://nuxt.com/modules/security).
+
+[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?repo=barbapapazes/gavarnie)
 
 ## Features
 
