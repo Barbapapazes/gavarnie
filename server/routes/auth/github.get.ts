@@ -55,8 +55,13 @@ export default oauthGitHubEventHandler({
     )
 
     if (user) {
-      // Message for the user: An existing account for this email already exists. Please login and visit your profile settings to add support for Github authentication.
-      // See if I can access to the server with https://nuxt.com/docs/api/composables/use-request-event
+      await updateSession(event,
+        {
+          password: useRuntimeConfig(event).session.password,
+        },
+        {
+          message: 'An existing account for this email already exists. Please login and visit your profile settings to add support for GitHub authentication.',
+        })
       return sendRedirect(event, '/login')
     }
 
