@@ -67,7 +67,7 @@ useSeoMeta({
     <ULandingSection
       title="Free and open-source"
       description="Build indie projects in hours and deploy in minutes for free. No hidden fees. Open-source (MIT)."
-      :links="[{ label: 'View source', color: 'gray', icon: 'i-simple-icons-github', size: 'lg', to: 'https://github.com/barbapapazes/gavernie', target: '_blank' }]"
+      :links="[{ label: 'View source', color: 'gray', icon: 'i-simple-icons-github', size: 'lg', to: 'https://github.com/barbapapazes/gavarnie', target: '_blank' }]"
     >
       <img
         src="/images/gavarnie2.jpg"
