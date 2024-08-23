@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.18.4",
+    "@nuxt/ui-pro": "^1.4.1",
     "@nuxthub/core": "^0.7.3",
     "drizzle-orm": "^0.33.0",
     "nuxt": "^3.12.4",
