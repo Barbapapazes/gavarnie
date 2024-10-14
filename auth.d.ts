@@ -7,6 +7,8 @@ declare module '#auth-utils' {
     avatar: string | null
     githubId?: number | null
     twitchId?: string | null
+    googleId?: string | null
+    googleToken?: string | null
     verifiedAt: string | null
     emailToVerify?: string | null
   }
