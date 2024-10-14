@@ -33,6 +33,16 @@ export default defineEventHandler(async (event) => {
       githubId: null,
     })
   }
+  else if (providerName === 'google') {
+    await updateUser(user.id, {
+      googleId: null,
+      googleToken: null,
+    })
+    await updateUserSession(event, {
+      ...user,
+      googleId: null,
+    })
+  }
   else {
     throw createError({
       statusCode: 400,

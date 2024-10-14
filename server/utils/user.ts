@@ -25,6 +25,10 @@ export async function findUserByTwitchId(twitchId: string) {
     .get()
 }
 
+export async function findUserByGoogleId(googleId: string) {
+  return useDrizzle().select().from(tables.users).where(eq(tables.users.googleId, googleId)).get()
+}
+
 export async function findUserBy(query: SQL | undefined) {
   return useDrizzle().select().from(tables.users).where(query).get()
 }
