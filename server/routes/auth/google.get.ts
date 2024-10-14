@@ -4,7 +4,6 @@ export default oauthGoogleEventHandler({
     scope: ['email', 'openid', 'profile'],
   },
   async onSuccess(event, { user: googleUser, tokens }) {
-
     // Fetch the current session if the user is already signed in
     const { user: userSession } = await getUserSession(event)
 
