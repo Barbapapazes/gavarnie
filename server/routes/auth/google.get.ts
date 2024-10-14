@@ -56,7 +56,7 @@ export default oauthGoogleEventHandler({
     const createdUser = await createUser({
       name: (googleUser.given_name || 'no name') as string,
       email: googleUser.email as string,
-      avatar: googleUser.profile_image_url as string,
+      avatar: googleUser.picture as string,
       googleId: googleUser.sub as string,
       googleToken: tokens.access_token as string,
       verifiedAt: new Date().toUTCString(),
