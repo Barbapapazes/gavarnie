@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   const providerName = getRouterParam(event, 'providerName')
 
   // A user must have at least one provider linked
-  const providers = (['twitch', 'github'] as const).filter(provider => user[`${provider}Id`])
+  const providers = (['twitch', 'github', 'google'] as const).filter(provider => user[`${provider}Id`])
 
   if (providers.length === 1) {
     throw createError({
