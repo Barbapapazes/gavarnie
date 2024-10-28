@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@nuxt/ui':
-        specifier: ^2.18.7
-        version: 2.18.7(magicast@0.3.5)(rollup@4.24.2)(vite@5.4.10(@types/node@22.8.1)(terser@5.36.0))(vue@3.5.12(typescript@5.6.3))
       '@nuxt/ui-pro':
         specifier: ^1.4.4
         version: 1.4.4(magicast@0.3.5)(rollup@4.24.2)(vite@5.4.10(@types/node@22.8.1)(terser@5.36.0))(vue@3.5.12(typescript@5.6.3))
