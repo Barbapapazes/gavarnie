@@ -1,5 +1,15 @@
 # Gavarnie
 
+Preconfigured and ready-to-use features designed to help you kickstart your full-stack NuxtHub project **quickly**.
+
+[Read the announcement](https://soubiran.dev/posts/introducing-gavarnie-launch-your-saas-with-nuxt-and-assurance)
+
+[⛰️ Gavarnie in action](https://gavarnie.barbapapazes.dev)
+
+> [!NOTE]
+> My aim with Gavarnie is not just to create another starter kit, but to contribute to the initiative of advancing Nuxt and NuxtHub.
+> Therefore, Gavarnie serves as a starting point, rather than an end, and it's up to us to foster its development. Please join me in enhancing it.
+
 <!-- automd:fetch url="gh:barbapapazes/barbapapazes/main/automd/support-my-work.md" -->
 
 > [!NOTE]
@@ -7,19 +17,9 @@
 
 <!-- /automd -->
 
-_[Read the announcement](https://soubiran.dev/posts/introducing-gavarnie-launch-your-saas-with-nuxt-and-assurance)_
-
-Preconfigured and ready-to-use features designed to help you kickstart your full-stack NuxtHub project **quickly**.
-
-> [!NOTE]
-> My aim with Gavarnie is not just to create another starter kit, but to contribute to the initiative of advancing Nuxt and NuxtHub.
-> Therefore, Gavarnie serves as a starting point, rather than an end, and it's up to us to foster its development. Please join me in enhancing it.
-
-[⛰️ Gavarnie in action](https://gavarnie.barbapapazes.dev)
+[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?template=gavarnie)
 
 Crafted with [Nuxt UI Pro](https://ui.nuxt.com/pro), [NuxtHub](https://hub.nuxt.com), [Nuxt Auth Utils](https://github.com/atinux/nuxt-auth-utils), and [Nuxt Security](https://nuxt.com/modules/security).
-
-[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?template=gavarnie)
 
 ## Features
 
