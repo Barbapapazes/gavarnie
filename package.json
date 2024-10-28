@@ -33,6 +33,7 @@
     "@nuxt/eslint": "^0.6.0",
     "drizzle-kit": "^0.26.2",
     "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
     "wrangler": "^3.83.0"
   },
   "packageManager": "pnpm@9.12.3"

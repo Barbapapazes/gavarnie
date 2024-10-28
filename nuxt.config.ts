@@ -1,7 +1,6 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
   extends: ['@nuxt/ui-pro'],
   modules: [
     '@nuxt/eslint',
@@ -10,6 +9,20 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     'nuxt-security',
   ],
+  devtools: { enabled: true },
+  colorMode: {
+    preference: 'system',
+  },
+  runtimeConfig: {
+    app: {
+      name: '',
+      url: '',
+    },
+    mail: {
+      key: '',
+      from: '',
+    },
+  },
   routeRules: {
     '/api/me': {
       security: {
@@ -29,20 +42,22 @@ export default defineNuxtConfig({
       },
     },
   },
-  runtimeConfig: {
-    app: {
-      name: '',
-      url: '',
-    },
-    mail: {
-      key: '',
-      from: '',
-    },
+  future: {
+    compatibilityVersion: 4,
   },
+  compatibilityDate: '2024-04-03',
   hub: {
     database: true,
     blob: true,
     kv: true,
+  },
+  csurf: {
+    methodsToProtect: ['POST', 'PUT', 'PATCH', 'DELETE'],
+  },
+  eslint: {
+    config: {
+      stylistic: true,
+    },
   },
   security: {
     csrf: true,
@@ -62,19 +77,4 @@ export default defineNuxtConfig({
       crossOriginEmbedderPolicy: isProd ? 'credentialless' : false,
     },
   },
-  csurf: {
-    methodsToProtect: ['POST', 'PUT', 'PATCH', 'DELETE'],
-  },
-  colorMode: {
-    preference: 'system',
-  },
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-  },
-  future: {
-    compatibilityVersion: 4,
-  },
-  devtools: { enabled: true },
 })

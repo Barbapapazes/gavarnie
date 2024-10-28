@@ -63,6 +63,9 @@ importers:
       eslint:
         specifier: ^9.13.0
         version: 9.13.0(jiti@2.3.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
       wrangler:
         specifier: ^3.83.0
         version: 3.83.0(@cloudflare/workers-types@4.20241022.0)
@@ -3013,8 +3016,8 @@ packages:
     peerDependencies:
       eslint: '>=8.56.0'
 
-  eslint-plugin-vue@9.29.1:
-    resolution: {integrity: sha512-MH/MbVae4HV/tM8gKAVWMPJbYgW04CK7SuzYRrlNERpxbO0P3+Zdsa2oAcFBW6xNu7W6lIkGOsFAMCRTYmrlWQ==}
+  eslint-plugin-vue@9.30.0:
+    resolution: {integrity: sha512-CyqlRgShvljFkOeYK8wN5frh/OGTvkj1S7wlr2Q2pUvwq+X5VYiLd6ZjujpgSgLnys2W8qrBLkXQ41SUYaoPIQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -6540,7 +6543,7 @@ snapshots:
       eslint-plugin-jsdoc: 50.4.3(eslint@9.13.0(jiti@2.3.3))
       eslint-plugin-regexp: 2.6.0(eslint@9.13.0(jiti@2.3.3))
       eslint-plugin-unicorn: 56.0.0(eslint@9.13.0(jiti@2.3.3))
-      eslint-plugin-vue: 9.29.1(eslint@9.13.0(jiti@2.3.3))
+      eslint-plugin-vue: 9.30.0(eslint@9.13.0(jiti@2.3.3))
       globals: 15.11.0
       local-pkg: 0.5.0
       pathe: 1.1.2
@@ -8404,7 +8407,7 @@ snapshots:
       semver: 7.6.3
       strip-indent: 3.0.0
 
-  eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@2.3.3)):
+  eslint-plugin-vue@9.30.0(eslint@9.13.0(jiti@2.3.3)):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.13.0(jiti@2.3.3))
       eslint: 9.13.0(jiti@2.3.3)
