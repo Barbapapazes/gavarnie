@@ -27,10 +27,10 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.1.24",
-    "@iconify-json/noto": "^1.1.20",
-    "@iconify-json/ph": "^1.1.14",
-    "@iconify-json/simple-icons": "^1.1.113",
+    "@iconify-json/heroicons": "^1.2.1",
+    "@iconify-json/noto": "^1.2.1",
+    "@iconify-json/ph": "^1.2.1",
+    "@iconify-json/simple-icons": "^1.2.10",
     "@nuxt/eslint": "^0.3.13",
     "drizzle-kit": "^0.24.0",
     "eslint": "^9.9.0",
