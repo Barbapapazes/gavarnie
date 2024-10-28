@@ -8,7 +8,7 @@ Preconfigured and ready-to-use features designed to help you kickstart your full
 > My aim with Gavarnie is not just to create another starter kit, but to contribute to the initiative of advancing Nuxt and NuxtHub.
 > Therefore, Gavarnie serves as a starting point, rather than an end, and it's up to us to foster its development. Please join me in enhancing it.
 
-[⛰️ Gavarnie in action](https://gavarnie.barbapapazes.com)
+[⛰️ Gavarnie in action](https://gavarnie.barbapapazes.dev)
 
 Crafted with [Nuxt UI Pro](https://ui.nuxt.com/pro), [NuxtHub](https://hub.nuxt.com), [Nuxt Auth Utils](https://github.com/atinux/nuxt-auth-utils), and [Nuxt Security](https://nuxt.com/modules/security).
 
