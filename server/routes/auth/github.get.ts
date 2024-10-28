@@ -65,8 +65,8 @@ export default defineOAuthGitHubEventHandler({
       return sendRedirect(event, '/login')
     }
 
-    // Fall back to the user's login or email name if the name is not available
-    const userName = oauthUser.name || oauthUser.login || oauthUser.email.split('@')[0]
+    // Fall back to the user's login if the name is not available
+    const userName = oauthUser.name || oauthUser.login
 
     // If the user is not signed in and no user exists with that GitHub ID or email address, create a new user
     const createdUser = await createUser({
