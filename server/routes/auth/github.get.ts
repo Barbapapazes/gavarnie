@@ -1,4 +1,4 @@
-export default oauthGitHubEventHandler({
+export default defineOAuthGitHubEventHandler({
   config: {
     emailRequired: true,
   },
