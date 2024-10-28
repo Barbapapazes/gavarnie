@@ -1,4 +1,4 @@
-export default oauthTwitchEventHandler({
+export default defineOAuthTwitchEventHandler({
   config: {
     scope: ['user:read:email'],
   },
