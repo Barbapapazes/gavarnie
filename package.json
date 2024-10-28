@@ -36,5 +36,5 @@
     "eslint": "^9.9.0",
     "wrangler": "^3.72.0"
   },
-  "packageManager": "pnpm@9.7.1"
+  "packageManager": "pnpm@9.12.3"
 }
