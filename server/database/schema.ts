@@ -10,6 +10,8 @@ export const users = sqliteTable('users', {
   githubToken: text('github_token'),
   twitchId: text('twitch_id').unique(),
   twitchToken: text('twitch_token'),
+  googleId: text('google_id').unique(),
+  googleToken: text('google_token'),
   verifiedAt: text('verified_at'),
   createdAt: text('created_at')
     .notNull()
