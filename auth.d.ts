@@ -12,9 +12,6 @@ declare module '#auth-utils' {
     verifiedAt: string | null
     emailToVerify?: string | null
   }
-
-  interface UserSession {
-  }
 }
 
 export {}

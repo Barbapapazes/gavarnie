@@ -1,5 +1,3 @@
-import { patchUserValidator } from '~/utils/validators'
-
 export default defineEventHandler(async (event) => {
   const { user } = await requireUserSession(event)
 

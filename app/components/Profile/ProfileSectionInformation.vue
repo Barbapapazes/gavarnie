@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type FetchError } from 'ofetch'
+import type { FetchError } from 'ofetch'
 import type { z } from 'zod'
 import type { FormSubmitEvent } from '#ui/types'
 
