@@ -5,11 +5,11 @@ const { user } = useUserSession()
 
 const isTwitchConnected = computed(() => Boolean(user.value?.twitchId))
 const isGithubConnected = computed(() => Boolean(user.value?.githubId))
-
+const isGoogleConnected = computed(() => Boolean(user.value?.googleId))
 const { $csrfFetch } = useNuxtApp()
 const { fetch: fetchUserSession } = useUserSession()
 
-async function disconnect(providerName: 'github' | 'twitch') {
+async function disconnect(providerName: 'github' | 'twitch' | 'google') {
   try {
     await $csrfFetch(`/api/me/providers/${providerName}`, {
       method: 'DELETE',
@@ -54,6 +54,16 @@ async function disconnect(providerName: 'github' | 'twitch') {
           @click="isTwitchConnected ? disconnect('twitch') : undefined"
         >
           {{ user?.twitchId ? 'Remove connection' : 'Connect Twitch' }}
+        </UButton>
+
+        <UButton
+          color="gray"
+          :to="isGoogleConnected ? undefined : '/auth/google'"
+          external
+          icon="i-simple-icons-google"
+          @click="isGoogleConnected ? disconnect('google') : undefined"
+        >
+          {{ user?.googleId ? 'Remove connection' : 'Connect Google' }}
         </UButton>
       </div>
     </ucard>

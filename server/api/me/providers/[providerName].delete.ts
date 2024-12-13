@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   const providerName = getRouterParam(event, 'providerName')
 
   // A user must have at least one provider linked
-  const providers = (['twitch', 'github'] as const).filter(provider => user[`${provider}Id`])
+  const providers = (['twitch', 'github', 'google'] as const).filter(provider => user[`${provider}Id`])
 
   if (providers.length === 1) {
     throw createError({
@@ -31,6 +31,16 @@ export default defineEventHandler(async (event) => {
     await updateUserSession(event, {
       ...user,
       githubId: null,
+    })
+  }
+  else if (providerName === 'google') {
+    await updateUser(user.id, {
+      googleId: null,
+      googleToken: null,
+    })
+    await updateUserSession(event, {
+      ...user,
+      googleId: null,
     })
   }
   else {
