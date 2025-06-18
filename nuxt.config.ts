@@ -14,10 +14,8 @@ export default defineNuxtConfig({
     preference: 'system',
   },
   runtimeConfig: {
-    app: {
-      name: '',
-      url: '',
-    },
+    name: '',
+    url: '',
     mail: {
       key: '',
       from: '',

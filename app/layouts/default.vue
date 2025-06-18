@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const appUrl = useRuntimeConfig().app.url
+const appUrl = useRuntimeConfig().url
 
 useSeoMeta({
   ogImage: `${appUrl}/images/og.png`,

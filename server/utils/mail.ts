@@ -14,7 +14,7 @@ export function useMail(event: H3Event) {
     html: string
   }) {
     return resend.emails.send({
-      from: `${runtimeConfig.app.name} <${mailConfig.from}>`,
+      from: `${runtimeConfig.name} <${mailConfig.from}>`,
       ...options,
     })
   }
