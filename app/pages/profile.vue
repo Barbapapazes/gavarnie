@@ -23,7 +23,7 @@ useSeoMeta({
 
         <ProfileSectionProviders />
 
-        <UDivider />
+        <USeparator />
 
         <ProfileSectionDeleteAccount />
       </UPageBody>
