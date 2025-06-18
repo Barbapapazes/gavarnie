@@ -14,7 +14,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UCard>
+  <UCard variant="subtle">
     <AuthForm
       :title
       :description

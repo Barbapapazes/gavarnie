@@ -11,7 +11,7 @@ defineProps<{
       <h2 class="text-md font-bold">
         {{ title }}
       </h2>
-      <p class="text-gray-500 dark:text-gray-400">
+      <p class="text-muted">
         {{ description }}
       </p>
     </div>

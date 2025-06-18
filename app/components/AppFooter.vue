@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const title = useRuntimeConfig().app.name
+const title = useRuntimeConfig().public.name
 
 const appConfig = useAppConfig()
 const notice = appConfig.footer.notice
@@ -9,19 +9,20 @@ const socials = appConfig.socials
 
 <template>
   <UFooter
-    :links="smallLinks"
-    :ui="{ bottom: { left: 'text-sm text-gray-600 dark:text-gray-300' } }"
+    :ui="{ left: 'text-sm text-gray-600 dark:text-gray-300' }"
   >
     <template #left>
       {{ title }} - {{ notice }}
     </template>
+
+    <UNavigationMenu :items="smallLinks" />
 
     <template #right>
       <UButton
         v-for="social in socials"
         :key="social.title"
         square
-        color="gray"
+        color="neutral"
         variant="ghost"
         v-bind="social"
       />

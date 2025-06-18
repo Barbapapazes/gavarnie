@@ -1,7 +1,9 @@
 export default defineAppConfig({
   ui: {
-    primary: 'green',
-    gray: 'stone',
+    colors: {
+      primary: 'green',
+      neutral: 'stone',
+    },
   },
   app: {
     logo: '/favicon.ico',
@@ -33,13 +35,13 @@ export default defineAppConfig({
     {
       title: 'X',
       icon: 'i-simple-icons-x',
-      to: 'https://x.soubiran.dev',
+      to: 'https://x.com/soubiran_',
       target: '_blank',
     },
     {
       title: 'LinkedIn',
       icon: 'i-simple-icons-linkedin',
-      to: 'https://linkedin.soubiran.dev',
+      to: 'https://linkedin.com/in/esteban25',
       target: '_blank',
     },
   ],

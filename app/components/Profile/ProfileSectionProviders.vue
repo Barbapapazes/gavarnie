@@ -38,7 +38,7 @@ async function disconnect(providerName: 'github' | 'twitch') {
 
       <div class="flex flex-row gap-4 mt-4">
         <UButton
-          color="gray"
+          color="neutral"
           :to="isGithubConnected ? undefined : '/auth/github'"
           external
           icon="i-simple-icons-github"
@@ -47,7 +47,7 @@ async function disconnect(providerName: 'github' | 'twitch') {
           {{ user?.githubId ? 'Remove connection' : 'Connect GitHub' }}
         </UButton>
         <UButton
-          color="gray"
+          color="neutral"
           :to="isTwitchConnected ? undefined : '/auth/twitch'"
           external
           icon="i-simple-icons-twitch"

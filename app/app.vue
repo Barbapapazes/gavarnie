@@ -1,17 +1,16 @@
 <script lang="ts" setup>
+const runtimeConfig = useRuntimeConfig()
 useHead({
-  titleTemplate: title => title ? `${title} - Gavarnie` : 'Gavarnie',
+  titleTemplate: title => title ? `${title} - ${runtimeConfig.public.name}` : runtimeConfig.public.name,
 })
 </script>
 
 <template>
-  <div>
+  <UApp>
     <NuxtRouteAnnouncer />
 
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-
-    <UNotifications />
-  </div>
+  </UApp>
 </template>

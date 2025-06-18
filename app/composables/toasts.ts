@@ -4,7 +4,7 @@ export const useSuccessToast = (title: string, description?: string) => {
   toast.add({
     title,
     description,
-    color: 'green',
+    color: 'success',
     icon: 'i-heroicons-check-circle',
   })
 }
@@ -15,7 +15,7 @@ export const useErrorToast = (title: string, description?: string) => {
   toast.add({
     title,
     description,
-    color: 'red',
+    color: 'error',
     icon: 'i-heroicons-x-circle',
   })
 }

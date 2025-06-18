@@ -36,14 +36,14 @@ if (import.meta.server) {
     <UAlert
       v-if="message"
       class="mb-8"
-      color="red"
+      color="error"
       variant="outline"
-      :close-button="{ icon: 'i-ph-x-bold', color: 'red', variant: 'link', padded: false }"
+      :close-button="{ icon: 'i-ph-x-bold', color: 'error', variant: 'link', padded: false }"
       :description="message"
       @close="message = ''"
     />
 
-    <UCard>
+    <UCard variant="subtle">
       <AuthForm
         :title
         :description

@@ -1,21 +1,23 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineNuxtConfig({
-  extends: ['@nuxt/ui-pro'],
   modules: [
+    '@nuxt/ui-pro',
     '@nuxt/eslint',
     '@nuxthub/core',
     'nuxt-auth-utils',
-    '@nuxt/ui',
     'nuxt-security',
   ],
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   colorMode: {
     preference: 'system',
   },
   runtimeConfig: {
-    name: '',
-    url: '',
+    public: {
+      name: '',
+      url: '',
+    },
     mail: {
       key: '',
       from: '',
@@ -70,7 +72,7 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'img-src': ['\'self\'', 'data:', 'https://avatars.githubusercontent.com', 'https://static-cdn.jtvnw.net/'],
-        'script-src': ['\'self\'', 'https', '\'nonce-{{nonce}}\'', 'https://static.cloudflareinsights.com'],
+        'script-src': ['\'self\'', 'https:', '\'nonce-{{nonce}}\'', '\'strict-dynamic\'', 'https://static.cloudflareinsights.com'],
       },
       crossOriginEmbedderPolicy: isProd ? 'credentialless' : false,
     },

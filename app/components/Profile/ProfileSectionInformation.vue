@@ -88,13 +88,13 @@ async function onSubmitProfileInformation(event: FormSubmitEvent<Schema>) {
           <div
             class="flex flex-col items-center gap-4"
           >
-            <div class="group relative h-20 w-20">
+            <div class="group relative size-20">
               <AppAvatar
-                size="3xl"
+                class="size-20"
                 :src="user.avatar"
               />
 
-              <label class="absolute inset-0 flex justify-center items-center text-transparent text-sm font-semibold border border-dashed border-transparent group-hover:border-primary group-hover:text-gray-200 rounded-full transition-all ease-in cursor-pointer group-hover:backdrop-blur group-hover:bg-gray-700/50">
+              <label class="absolute inset-0 flex justify-center items-center text-transparent text-sm font-semibold border border-dashed border-transparent group-hover:border-primary group-hover:text-default rounded-full transition-all ease-in cursor-pointer group-hover:backdrop-blur group-hover:bg-neutral-700/50">
                 Edit
                 <input
                   ref="fileInput"
@@ -109,14 +109,14 @@ async function onSubmitProfileInformation(event: FormSubmitEvent<Schema>) {
             <div class="flex flex-row gap-4">
               <UButton
                 v-if="user.avatar"
-                color="gray"
+                color="neutral"
                 @click="removeAvatar()"
               >
                 Remove
               </UButton>
               <UButton
                 v-else
-                color="gray"
+                color="neutral"
                 @click="triggerFileInput()"
               >
                 Upload
@@ -134,31 +134,33 @@ async function onSubmitProfileInformation(event: FormSubmitEvent<Schema>) {
           @submit="onSubmitProfileInformation"
         >
           <div class="space-y-4 max-w-sm">
-            <UFormGroup
+            <UFormField
               label="Email"
               name="email"
             >
               <UInput
                 v-model="state.email"
                 required
+                class="w-100"
               />
-            </UFormGroup>
+            </UFormField>
             <p
               v-if="!user?.verifiedAt"
-              class="text-sm text-red-500 dark:text-red-400"
+              class="text-sm text-error"
             >
               Your email address '{{ user?.emailToVerify }}' is not verified. Please check your inbox for the verification email before continuing to use the application.
             </p>
 
-            <UFormGroup
+            <UFormField
               label="Name"
               name="name"
             >
               <UInput
                 v-model="state.name"
                 required
+                class="w-100"
               />
-            </UFormGroup>
+            </UFormField>
           </div>
 
           <div class="flex flex-row justify-end">

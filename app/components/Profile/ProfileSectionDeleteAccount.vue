@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { FetchError } from 'ofetch'
+import type { UserSession } from '#auth-utils'
 
 const { $csrfFetch } = useNuxtApp()
 
@@ -28,7 +29,7 @@ async function onDeleteAccount() {
       method: 'DELETE',
     })
 
-    session.value = {}
+    session.value = {} as UserSession
 
     useSuccessToast('Account deleted successfully')
 
@@ -56,41 +57,35 @@ async function onDeleteAccount() {
 
       <UButton
         class="mt-4"
-        color="red"
+        color="error"
         @click="askConfirmation"
       >
         Delete Account
       </UButton>
     </UCard>
 
-    <UModal v-model="isOpen">
-      <UCard :ui="{ footer: { base: 'flex justify-end' } }">
-        <template #header>
-          <h2 class="text-lg font-semibold">
-            Confirm Account Deletion
-          </h2>
-          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-            This action is <strong>irreversible</strong> and will delete all your data <strong>permanently</strong>.
-          </p>
-        </template>
-
-        <template #footer>
-          <UButton
-            color="black"
-            variant="ghost"
-            @click="closeConfirmation()"
-          >
-            Cancel
-          </UButton>
-          <UButton
-            color="red"
-            :loading="isLoading"
-            @click="onDeleteAccount()"
-          >
-            Confirm
-          </UButton>
-        </template>
-      </UCard>
+    <UModal
+      v-model:open="isOpen"
+      title="Confirm Account Deletion"
+      description="Are you sure you want to delete your account? This action is irreversible and will delete all your data permanently."
+      :ui="{ footer: 'justify-end' }"
+    >
+      <template #footer>
+        <UButton
+          color="neutral"
+          variant="ghost"
+          @click="closeConfirmation()"
+        >
+          Cancel
+        </UButton>
+        <UButton
+          color="error"
+          :loading="isLoading"
+          @click="onDeleteAccount()"
+        >
+          Confirm
+        </UButton>
+      </template>
     </UModal>
   </ProfileSection>
 </template>

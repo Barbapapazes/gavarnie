@@ -1,12 +1,13 @@
 <script lang="ts" setup>
-import type { HeaderLink } from '#ui-pro/types'
+import type { NavigationMenuItem } from '@nuxt/ui'
+import type { UserSession } from '#auth-utils'
 
 const { $csrfFetch } = useNuxtApp()
 
 const { loggedIn, session, user } = useUserSession()
 
-const links = computed<HeaderLink[]>(() => {
-  const links: HeaderLink[] = []
+const links = computed<NavigationMenuItem[]>(() => {
+  const links: NavigationMenuItem[] = []
 
   if (loggedIn.value) {
     links.push({
@@ -30,12 +31,12 @@ const items = [
     {
       label: 'Logout',
       icon: 'i-ph-sign-out-duotone',
-      click: async () => {
+      onSelect: async () => {
         await $csrfFetch('/api/_auth/session', {
           method: 'DELETE',
         })
 
-        session.value = {}
+        session.value = {} as UserSession
 
         await navigateTo('/')
       },
@@ -43,17 +44,16 @@ const items = [
   ],
 ]
 
-const title = useRuntimeConfig().app.name
+const title = useRuntimeConfig().public.name
 const icon = useAppConfig().app.logo
 </script>
 
 <template>
   <UHeader
     :title
-    :links="links"
-    :ui="{ logo: 'items-center' }"
+    :ui="{ title: 'flex items-center' }"
   >
-    <template #logo>
+    <template #title>
       <img
         class="h-6 w-6"
         :src="icon"
@@ -63,33 +63,35 @@ const icon = useAppConfig().app.logo
       <span> {{ title }} </span>
     </template>
 
+    <UNavigationMenu :items="links" />
+
     <template #right>
       <template v-if="loggedIn && user">
-        <UDropdown
+        <UDropdownMenu
           :items="items"
-          :popper="{ placement: 'bottom-end' }"
+          :content="{ align: 'end' }"
         >
           <UButton
-            color="gray"
+            color="neutral"
             aria-label="Profile picture of connected user"
             variant="ghost"
             square
           >
             <AppAvatar :src="user.avatar" />
           </UButton>
-        </UDropdown>
+        </UDropdownMenu>
       </template>
       <template v-else>
         <UButton
           to="/login"
-          color="gray"
+          color="neutral"
           variant="ghost"
         >
           Login
         </UButton>
         <UButton
           to="/register"
-          color="black"
+          color="neutral"
           variant="solid"
         >
           Register
