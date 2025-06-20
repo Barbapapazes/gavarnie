@@ -21,13 +21,13 @@ importers:
         specifier: ^3.17.5
         version: 3.17.5(@parcel/watcher@2.5.1)(@types/node@24.0.3)(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0)(drizzle-orm@0.44.2(@cloudflare/workers-types@4.20250618.0)(@libsql/client-wasm@0.15.9)(better-sqlite3@11.10.0)))(drizzle-orm@0.44.2(@cloudflare/workers-types@4.20250618.0)(@libsql/client-wasm@0.15.9)(better-sqlite3@11.10.0))(eslint@9.29.0(jiti@2.4.2))(ioredis@5.6.1)(lightningcss@1.30.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.43.0)(terser@5.43.0)(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.0)(yaml@2.8.0))(yaml@2.8.0)
       nuxt-auth-utils:
-        specifier: ^0.5.0
+        specifier: ^0.5.20
         version: 0.5.20(magicast@0.3.5)
       nuxt-security:
-        specifier: 2.0.0-rc.9
-        version: 2.0.0-rc.9(magicast@0.3.5)(rollup@4.43.0)
+        specifier: 2.2.0
+        version: 2.2.0(magicast@0.3.5)(rollup@4.43.0)
       resend:
-        specifier: ^4.0.0
+        specifier: ^4.6.0
         version: 4.6.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       uncrypto:
         specifier: ^0.1.3
@@ -39,7 +39,7 @@ importers:
         specifier: ^4.5.1
         version: 4.5.1(vue@3.5.17(typescript@5.8.3))
       zod:
-        specifier: ^3.23.8
+        specifier: ^3.25.67
         version: 3.25.67
     devDependencies:
       '@iconify-json/heroicons':
@@ -70,8 +70,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       wrangler:
-        specifier: ^4.20.3
-        version: 4.20.3(@cloudflare/workers-types@4.20250618.0)
+        specifier: ^4.20.5
+        version: 4.20.5(@cloudflare/workers-types@4.20250618.0)
 
 packages:
 
@@ -4032,8 +4032,8 @@ packages:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
 
-  miniflare@4.20250617.1:
-    resolution: {integrity: sha512-NjwKVzPGCAUgkCOJxHBwgV2Obu3g4/wAJE0JaA9whcYip4VAJwQ1fU9TMtoKLY91jD9ANR221+CqLyqxennjqg==}
+  miniflare@4.20250617.3:
+    resolution: {integrity: sha512-j+LZycT11UdlVeNdaqD0XdNnYnqAL+wXmboz+tNPFgTq6zhD489Ujj3BfSDyEHDCA9UFBLbkc5ByGWBh+pYZ5Q==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -4235,8 +4235,9 @@ packages:
   nuxt-csurf@1.6.5:
     resolution: {integrity: sha512-/DMNTON8LIVhntamKbBmAuM879B0QnuSJa7ZAkmkZe+21m+1QGcjVUxtSkizaM48NUvkuAGYOG0ncn+kqEgrzw==}
 
-  nuxt-security@2.0.0-rc.9:
-    resolution: {integrity: sha512-kymOhnPcwhKj8g20GXgrFC6h7Oub7+53yqD0byovCDb50a3hlSRdSLlSBoP2/ca4dtnbu8FWJd5/KuUHBGHWXw==}
+  nuxt-security@2.2.0:
+    resolution: {integrity: sha512-bTdgAAAdnvM1R1wAX3zQBbYJh6YNFyvsKJwbT9oVv+0U9J/9+k+mufQlJMFO8AdTefi/EDFHG75in9RTnCpngQ==}
+    engines: {node: '>=18.0.0'}
 
   nuxt@3.17.5:
     resolution: {integrity: sha512-HWTWpM1/RDcCt9DlnzrPcNvUmGqc62IhlZJvr7COSfnJq2lKYiBKIIesEaOF+57Qjw7TfLPc1DQVBNtxfKBxEw==}
@@ -5644,8 +5645,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.20.3:
-    resolution: {integrity: sha512-ugvmi43CFPbjeQFfhU7EqE1V0ek6ZFv80jzwHcPk/7jPFmOA4ahT5uUU1ga5ZP6vz6lUuG2bLnyl1T5qJah0cg==}
+  wrangler@4.20.5:
+    resolution: {integrity: sha512-tmiyt2vBHszhdzJEDbCpFLU2RiV7/QzvGMV07Zaz4ptqiU2h/lTojyNJAugPpSFNiOuY+k0g3ENNTDQqoUkMFA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -9958,7 +9959,7 @@ snapshots:
 
   min-indent@1.0.1: {}
 
-  miniflare@4.20250617.1:
+  miniflare@4.20250617.3:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       acorn: 8.14.0
@@ -10245,7 +10246,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  nuxt-security@2.0.0-rc.9(magicast@0.3.5)(rollup@4.43.0):
+  nuxt-security@2.2.0(magicast@0.3.5)(rollup@4.43.0):
     dependencies:
       '@nuxt/kit': 3.17.5(magicast@0.3.5)
       basic-auth: 2.0.1
@@ -11891,13 +11892,13 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250617.0
       '@cloudflare/workerd-windows-64': 1.20250617.0
 
-  wrangler@4.20.3(@cloudflare/workers-types@4.20250618.0):
+  wrangler@4.20.5(@cloudflare/workers-types@4.20250618.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.0
       '@cloudflare/unenv-preset': 2.3.3(unenv@2.0.0-rc.17)(workerd@1.20250617.0)
       blake3-wasm: 2.1.5
       esbuild: 0.25.4
-      miniflare: 4.20250617.1
+      miniflare: 4.20250617.3
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.17
       workerd: 1.20250617.0
