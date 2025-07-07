@@ -34,7 +34,7 @@
     "@nuxt/eslint": "^1.4.1",
     "automd": "^0.4.0",
     "drizzle-kit": "^0.31.1",
-    "eslint": "^9.29.0",
+    "eslint": "^9.30.1",
     "typescript": "^5.8.3",
     "wrangler": "^4.20.3"
   },
